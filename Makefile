@@ -4,6 +4,7 @@ ME ?= example
 TARGETS = $(DOTFILES) $(MINEFILES)
 SHELL = /bin/bash
 CWD = $(shell pwd)
+YCM = $(CWD)/bundle/YouCompleteMe
 
 define check_file
 	@if [[ -e $1 && "$(OVERWRITE)" != "1" ]]; then \
@@ -36,6 +37,10 @@ $(HOME)/.%: %
 
 install: $(clearfiles) $(TARGETS)
 	git submodule update --init
+	cd $(YCM)
+	git submodule update --init --recursive
+	bundle/YouCompleteMe/install.py --clang-completer
+	cd $(CWD)
 
 update:
 	git pull
