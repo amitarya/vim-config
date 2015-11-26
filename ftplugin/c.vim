@@ -1,5 +1,8 @@
 set shiftwidth=8
-set tabstop=8
-set softtabstop=0
-set noexpandtab
-set cinoptions=(0,W16
+set autoindent smartindent
+set smarttab                    " Make <tab> and <backspace> smarter
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set textwidth=80
+set formatoptions-=t formatoptions+=croql
