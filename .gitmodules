@@ -185,3 +185,6 @@
 [submodule "bundle/elixir"]
 	path = bundle/elixir
 	url = https://github.com/elixir-lang/vim-elixir.git
+[submodule "/Users/amit.arya/.vim/bundle/vim-go"]
+	path = /Users/amit.arya/.vim/bundle/vim-go
+	url = https://github.com/fatih/vim-go.git
