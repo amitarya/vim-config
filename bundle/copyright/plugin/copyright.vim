@@ -3,7 +3,7 @@
 function! PrintCStyleCopyright()
   let year = system('date +"%Y"')[0:3]
   call setline(1, '// Copyright: ThoughtSpot Inc ' . year)
-  call setline(2, '// Author: Abhishek Rai (abhishek@thoughtspot.com)')
+  call setline(2, '// Author: Amit Arya (amit.arya@thoughtspot.com)')
 endfunction
 
 function! PrintPythonCopyright()
@@ -11,7 +11,7 @@ function! PrintPythonCopyright()
   call setline(1, '#!/usr/bin/python')
   call setline(2, '')
   call setline(3, '# Copyright: ThoughtSpot Inc ' . year)
-  call setline(4, '# Author: Abhishek Rai (abhishek@thoughtspot.com)')
+  call setline(4, '# Author: Amit Arya (amit.arya@thoughtspot.com)')
 endfunction
 
 function! PrintBashCopyright()
@@ -19,7 +19,7 @@ function! PrintBashCopyright()
   call setline(1, '#!/bin/bash')
   call setline(2, '')
   call setline(3, '# Copyright: ThoughtSpot Inc ' . year)
-  call setline(4, '# Author: Abhishek Rai (abhishek@thoughtspot.com)')
+  call setline(4, '# Author: Amit Arya (amit.arya@thoughtspot.com)')
 endfunction
 
 
