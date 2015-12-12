@@ -187,11 +187,12 @@ nnoremap <C-y> :YRShow<cr>
 let g:yankring_history_dir = '$HOME/.vim'
 let g:yankring_manual_clipboard_check = 0
 
+let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=1
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': [],
-                           \ 'passive_filetypes': ['tex', 'c', 'scss', 'html', 'scala'] }
+                           \ 'passive_filetypes': ['tex', 'c', 'scss', 'html', 'scala', 'go'] }
 let g:syntastic_javascript_checkers = ['jsxhint']
 let g:syntastic_quiet_messages = {"regex": 'assigned but unused variable'}
 
