@@ -66,7 +66,7 @@ set viminfo=%100,'100,/100,h,\"500,:1000,n~/.vim/viminfo
 set tags+=tags;$HOME
 
 " Undo
-set undolevels=10000
+set undolevels=100
 if has("persistent_undo")
   set undodir=~/.vim/undo       " Allow undoes to persist even after a file is closed
   set undofile
@@ -291,3 +291,4 @@ augroup END
 " fix for vim-javascript + rainbow incompatibility
 autocmd FileType javascript syntax clear jsFuncBlock
 set nocursorline
+let g:pymode_folding = 0
