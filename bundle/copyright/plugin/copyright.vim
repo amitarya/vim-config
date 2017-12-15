@@ -30,7 +30,15 @@ function! PrintGroovyCopyright()
   call setline(4, '# Author: Amit Arya (amit.arya@thoughtspot.com)')
 endfunction
 
+function! PrintProtoCopyright()
+  let year = system('date +"%Y"')[0:3]
+  call setline(1, '// Copyright: ThoughtSpot Inc ' . year)
+  call setline(2, '// Author: Amit Arya (amit.arya@thoughtspot.com)')
+endfunction
+
+
 au BufNewFile *.{cpp,hpp,go} :call PrintCStyleCopyright()
 au BufNewFile *.py :call PrintPythonCopyright()
 au BufNewFile *.sh :call PrintBashCopyright()
 au BufNewFile *.groovy :call PrintGroovyCopyright()
+au BufNewFile *.proto :call PrintProtoCopyright()
