@@ -293,7 +293,7 @@ autocmd FileType javascript syntax clear jsFuncBlock
 set nocursorline
 let g:pymode_folding = 0
 let g:clang_format#style_options = {
-            \ "AccessModifierOffset" : -4
+            \ "AccessModifierOffset" : -4,
             \ "AllowShortIfStatementsOnASingleLine" : "true",
             \ "AlwaysBreakTemplateDeclarations" : "true",
             \ "Standard" : "C++11"}
