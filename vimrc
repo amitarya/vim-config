@@ -10,7 +10,7 @@ call pathogen#infect()
 " Display options
 syntax on
 set cursorline
-set number
+set rnu
 set list!                       " Display unprintable characters
 set listchars=tab:▸\ ,trail:•,extends:»,precedes:«
 if $TERM =~ '256color'
